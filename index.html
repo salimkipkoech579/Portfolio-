@@ -1,0 +1,1365 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Kipkoech | Tech Innovator & Educator Portfolio</title>
+    <meta
+      name="description"
+      content="Official portfolio of Victor Kipkoech – Full Stack Developer, Mathematics & Physics Educator, Ethical Hacker, and Digital Entrepreneur based in Nairobi, Kenya."
+    />
+    <meta property="og:title" content="Victor Kipkoech | Tech Innovator & Educator Portfolio" />
+    <meta
+      property="og:description"
+      content="Official portfolio of Victor Kipkoech – Full Stack Developer, Mathematics & Physics Educator, Ethical Hacker, and Digital Entrepreneur based in Nairobi, Kenya."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts & Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ====================================================================
+         1. Header & Navigation (Strict 3-Zone Top Bar Contract)
+         ==================================================================== -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-container">
+        <!-- Zone 1: Wordmark -->
+        <a href="#home" class="brand-wordmark" aria-label="Victor Kipkoech Home">
+          <span class="brand-dot"></span>
+          Victor Kipkoech
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="desktop-nav">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Zone 3: Actions -->
+        <div class="header-actions">
+          <!-- Dark/Light Theme Toggle -->
+          <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to Light Mode">
+            <!-- Sun Icon (displayed in dark mode) -->
+            <svg class="icon-sun" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (displayed in light mode) -->
+            <svg class="icon-moon" style="display: none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- Hire Me Action Button -->
+          <a href="#contact" class="btn btn-primary btn-sm nav-hire-btn">Hire Me</a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobileDrawer">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+          <a href="#contact" class="btn btn-primary btn-sm" style="flex: 1;">Hire Me</a>
+          <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="flex: 1;">WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         2. Hero Section
+         ==================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-greeting">
+            <span class="hero-status-pulse"></span>
+            <span>Available for Hire & Tutoring</span>
+          </div>
+
+          <h1 class="hero-name">Victor Kipkoech</h1>
+
+          <div class="hero-animated-role">
+            <span>I am a&nbsp;</span>
+            <span class="typed-text" id="typedText">Full Stack Developer</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-headline">
+            Empowering Businesses and Students Through Technology, Education, and Creative Solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+            <a href="#contact" class="btn btn-secondary btn-lg">Contact Me</a>
+            <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.554 1.766.82 2.78.821 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.767-5.768-5.767zm9.969 5.768c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.241l-7.181 1.882 1.916-6.999c-.911-1.493-1.416-3.23-1.416-5.074 0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+              </svg>
+              WhatsApp Me
+            </a>
+          </div>
+
+          <div class="hero-social-group">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Victor Kipkoech">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.554 1.766.82 2.78.821 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.767-5.768-5.767zm9.969 5.768c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.241l-7.181 1.882 1.916-6.999c-.911-1.493-1.416-3.23-1.416-5.074 0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+                </svg>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/kipkoechvictor" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/victorkipkoech" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://facebook.com/victorkipkoech" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook Profile">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Media Frame -->
+        <div class="hero-media-wrapper reveal-zoom-in">
+          <div class="hero-media-frame">
+            <img
+              src="./assets/images/victor_tech_portrait_1791143914118.jpg"
+              alt="Victor Kipkoech - Full Stack Developer & Educator"
+              class="hero-image"
+              loading="eager"
+              referrerpolicy="no-referrer"
+            />
+            <div class="hero-media-badge">
+              <div class="badge-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="badge-text-primary">Victor Kipkoech</div>
+                <div class="badge-text-secondary">Nairobi, Kenya · Tech & STEM Educator</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. About Section
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal-slide-up">
+          <span class="section-kicker">Professional Biography</span>
+          <h2 class="section-title">About Victor Kipkoech</h2>
+          <p class="section-subtitle">
+            Bridging software engineering, cybersecurity rigor, and STEM pedagogy to create real-world impact.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Narrative -->
+          <div class="about-bio reveal-slide-left">
+            <p>
+              I am <strong>Victor Kipkoech</strong>, a driven technologist, passionate educator, and digital innovator based in <strong>Nairobi, Kenya</strong>. My professional journey combines deep technical expertise in software engineering and cybersecurity with a profound dedication to teaching foundational sciences.
+            </p>
+            <p>
+              In software engineering, I specialize in building robust, performant web applications, automated business backends, and responsive user experiences. Concurrently, as a Mathematics and Physics teacher, I simplify intricate theoretical frameworks into actionable knowledge, having mentored over 100 students to academic excellence and problem-solving mastery.
+            </p>
+            <p>
+              With security certifications and real-world ethical hacking practice, I safeguard critical systems against vulnerabilities. Whether you require a resilient full-stack application, rigorous STEM tutoring, or comprehensive brand transformation, I bring disciplined execution and creative problem solving.
+            </p>
+
+            <h3 class="about-checklist-title">Core Identity & Roles</h3>
+            <ul class="about-checklist reveal-stagger-group">
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Full Stack Developer</span>
+              </li>
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Mathematics Teacher</span>
+              </li>
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Physics Teacher</span>
+              </li>
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Ethical Hacker</span>
+              </li>
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Branding Expert</span>
+              </li>
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Graphic Designer</span>
+              </li>
+              <li class="checklist-item reveal-fade">
+                <span class="check-icon">
+                  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Online Business Consultant</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Facts & Highlights Card -->
+          <div class="about-card-box reveal-slide-right">
+            <h3 class="about-card-title">Professional Snapshot</h3>
+            <ul class="about-info-list">
+              <li class="info-item">
+                <span class="info-label">Full Name</span>
+                <span class="info-value">Victor Kipkoech</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Base Location</span>
+                <span class="info-value">Nairobi, Kenya (UTC+3)</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Experience</span>
+                <span class="info-value">5+ Years in Tech & STEM Education</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Phone & WhatsApp</span>
+                <a href="tel:+254769669814" class="info-value info-link">0769669814</a>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Direct Email</span>
+                <a href="mailto:kipkoechvictor503@gmail.com" class="info-value info-link">kipkoechvictor503@gmail.com</a>
+              </li>
+              <li class="info-item">
+                <span class="info-label">Availability</span>
+                <span class="info-value" style="color: var(--accent-emerald);">Freelance & Private Tutoring Active</span>
+              </li>
+            </ul>
+
+            <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+              <a href="#contact" class="btn btn-primary btn-sm" style="flex: 1;">Get In Touch</a>
+              <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="flex: 1;">Quick Chat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. Skills Section (Animated Progress Bars)
+         ==================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-slide-up">
+          <span class="section-kicker">Technical & Pedagogical Mastery</span>
+          <h2 class="section-title">Core Skills & Competencies</h2>
+          <p class="section-subtitle">
+            Demonstrated mastery across full-stack engineering, cybersecurity auditing, STEM pedagogy, and visual branding.
+          </p>
+        </div>
+
+        <div class="skills-grid reveal-stagger-group">
+          <!-- 1. Programming Skills -->
+          <div class="skill-category-card reveal-slide-left delay-100">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- HTML -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="95"></div>
+                </div>
+              </div>
+              <!-- CSS -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="92"></div>
+                </div>
+              </div>
+              <!-- JavaScript -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="90"></div>
+                </div>
+              </div>
+              <!-- PHP -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="85"></div>
+                </div>
+              </div>
+              <!-- Python -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="88"></div>
+                </div>
+              </div>
+              <!-- MySQL -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-percent">86%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="86"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Cybersecurity Skills -->
+          <div class="skill-category-card reveal-slide-right delay-200">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Cybersecurity</h3>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- Ethical Hacking -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Ethical Hacking</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="88"></div>
+                </div>
+              </div>
+              <!-- Penetration Testing -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Penetration Testing</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="85"></div>
+                </div>
+              </div>
+              <!-- Network Security -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Network Security</span>
+                  <span class="skill-percent">84%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="84"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Teaching Skills -->
+          <div class="skill-category-card reveal-slide-left delay-100">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Teaching & Pedagogy</h3>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- Mathematics -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Mathematics</span>
+                  <span class="skill-percent">96%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="96"></div>
+                </div>
+              </div>
+              <!-- Physics -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Physics</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="94"></div>
+                </div>
+              </div>
+              <!-- Online Tutoring -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Online Tutoring</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="92"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Design Skills -->
+          <div class="skill-category-card reveal-slide-right delay-200">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="category-title">Design</h3>
+            </div>
+
+            <div class="skill-bars-list">
+              <!-- Logo Design -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Logo Design</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="90"></div>
+                </div>
+              </div>
+              <!-- Flyer Design -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Flyer Design</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="88"></div>
+                </div>
+              </div>
+              <!-- Brand Design -->
+              <div class="skill-bar-item">
+                <div class="skill-bar-labels">
+                  <span class="skill-name">Brand Design</span>
+                  <span class="skill-percent">91%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" data-percent="91"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. Services Section (8 Cards with Beautiful Icons)
+         ==================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal-slide-up">
+          <span class="section-kicker">Specialized Services</span>
+          <h2 class="section-title">What I Offer</h2>
+          <p class="section-subtitle">
+            Targeted solutions tailored for ambitious entrepreneurs, expanding enterprises, and motivated students.
+          </p>
+        </div>
+
+        <div class="services-grid reveal-stagger-group">
+          <!-- 1. Web Development -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">1. Web Development</h3>
+            <p class="service-desc">
+              Custom digital web architecture crafted for lightning speed, responsive elegance, and measurable conversion.
+            </p>
+            <ul class="service-sublist">
+              <li>Business Websites</li>
+              <li>Portfolio Websites</li>
+              <li>E-commerce Websites</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Web Development">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 2. Mathematics Tutoring -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="4" y1="9" x2="20" y2="9"></line>
+                <line x1="4" y1="15" x2="20" y2="15"></line>
+                <line x1="10" y1="3" x2="8" y2="21"></line>
+                <line x1="16" y1="3" x2="14" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">2. Mathematics Tutoring</h3>
+            <p class="service-desc">
+              Systematic mastery of pure and applied mathematics, from foundational algebra to multivariable calculus and exam drills.
+            </p>
+            <ul class="service-sublist">
+              <li>Pure & Applied Math</li>
+              <li>Calculus & Algebra</li>
+              <li>Exam Preparation</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Mathematics Tutoring">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 3. Physics Tutoring -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">3. Physics Tutoring</h3>
+            <p class="service-desc">
+              Intuitive conceptual clarity in classical mechanics, wave physics, thermodynamics, electromagnetism, and atomic theory.
+            </p>
+            <ul class="service-sublist">
+              <li>Mechanics & Waves</li>
+              <li>Electromagnetism</li>
+              <li>Interactive Problem Labs</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Physics Tutoring">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 4. Ethical Hacking -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">4. Ethical Hacking</h3>
+            <p class="service-desc">
+              Rigorous offensive testing and defensive audits to pinpoint vulnerabilities before malicious actors exploit them.
+            </p>
+            <ul class="service-sublist">
+              <li>Penetration Testing</li>
+              <li>Vulnerability Scans</li>
+              <li>Network Hardening</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Ethical Hacking">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 5. Branding & Identity Design -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">5. Branding & Identity</h3>
+            <p class="service-desc">
+              Holistic visual identity architecture, color psychology, and unified design guidelines that establish market authority.
+            </p>
+            <ul class="service-sublist">
+              <li>Brand Style Guides</li>
+              <li>Color & Typography Systems</li>
+              <li>Brand Positioning</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Branding & Identity Design">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 6. Logo Design -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="service-title">6. Logo Design</h3>
+            <p class="service-desc">
+              Iconic, mathematically proportioned vector logos that remain memorable across tiny app icons to monumental billboards.
+            </p>
+            <ul class="service-sublist">
+              <li>Custom Vector Marks</li>
+              <li>Monograms & Logotypes</li>
+              <li>Scalable Asset Kits</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Logo Design">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 7. Flyer Design -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">7. Flyer Design</h3>
+            <p class="service-desc">
+              High-impact promotional posters and digital flyers formatted with typographic hierarchy and engaging promotional hooks.
+            </p>
+            <ul class="service-sublist">
+              <li>Digital Promo Posters</li>
+              <li>Print-Ready Brochures</li>
+              <li>Social Media Banners</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Flyer Design">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- 8. Online Business Services -->
+          <div class="service-card reveal-zoom-in">
+            <div class="service-icon-box">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">8. Online Business Services</h3>
+            <p class="service-desc">
+              End-to-end digital consulting covering payment integrations, workflow automations, technical SEO, and business setup.
+            </p>
+            <ul class="service-sublist">
+              <li>Automation Pipelines</li>
+              <li>Digital Consulting</li>
+              <li>Payment & Store Setup</li>
+            </ul>
+            <a href="#contact" class="service-action-link" data-service-name="Online Business Services">
+              Book Service
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. Portfolio Section (Responsive Cards with Filtering & Lightbox)
+         ==================================================================== -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal-slide-up">
+          <span class="section-kicker">Curated Works</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">
+            Explore live production web systems, STEM educational laboratories, cybersecurity audits, and graphic branding deliverables.
+          </p>
+        </div>
+
+        <!-- Filter Controls (Segmented Control) -->
+        <div class="portfolio-filter-bar reveal-fade">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="websites">Websites</button>
+          <button type="button" class="filter-btn" data-filter="educational">Educational Projects</button>
+          <button type="button" class="filter-btn" data-filter="cybersecurity">Cybersecurity Projects</button>
+          <button type="button" class="filter-btn" data-filter="logos">Logos</button>
+          <button type="button" class="filter-btn" data-filter="flyers">Flyers</button>
+          <button type="button" class="filter-btn" data-filter="branding">Branding Projects</button>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="portfolio-grid reveal-stagger-group" id="portfolioGrid">
+          <!-- Project 1: Websites -->
+          <article
+            class="portfolio-card reveal-zoom-in"
+            data-category="websites"
+            data-category-label="Web Development"
+            data-client="Enterprise Retail Group"
+            data-tech="JavaScript, PHP, MySQL, CSS Grid, REST API"
+            data-long-desc="A full-featured commerce portal featuring instant catalog search, high-volume inventory synchronization, and resilient payment gateway integration built for high conversion."
+          >
+            <div class="portfolio-media-box">
+              <img
+                src="./assets/images/project_web_dev_1791143925754.jpg"
+                alt="Apex Commerce & Enterprise Suite"
+                class="portfolio-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <div class="portfolio-overlay">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn">View Details</button>
+              </div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span>Web Development</span>
+                <span aria-hidden="true">·</span>
+                <span>Full Stack</span>
+                <span aria-hidden="true">·</span>
+                <span>2026</span>
+              </div>
+              <h3 class="portfolio-title">Apex Commerce & Enterprise Suite</h3>
+              <p class="portfolio-summary">
+                Responsive business platform featuring automated checkout flows, real-time analytics, and modular CMS architecture.
+              </p>
+              <div class="portfolio-footer-action">
+                <button type="button" class="portfolio-link-btn view-project-btn">
+                  Explore Project
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Educational Projects -->
+          <article
+            class="portfolio-card reveal-zoom-in"
+            data-category="educational"
+            data-category-label="Educational Projects"
+            data-client="National STEM Institute"
+            data-tech="HTML5 Canvas, Vanilla JS, Physics Engine, Web Audio"
+            data-long-desc="Interactive simulation platform illustrating complex wave interference, electromagnetic fields, and 3D coordinate mathematics with real-time parametric manipulation for high school and university students."
+          >
+            <div class="portfolio-media-box">
+              <img
+                src="./assets/images/project_stem_edu_1791143937095.jpg"
+                alt="Quantum Physics & Math Interactive Labs"
+                class="portfolio-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <div class="portfolio-overlay">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn">View Details</button>
+              </div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span>Educational Projects</span>
+                <span aria-hidden="true">·</span>
+                <span>Physics & Math</span>
+                <span aria-hidden="true">·</span>
+                <span>2026</span>
+              </div>
+              <h3 class="portfolio-title">Quantum Physics & Math Interactive Labs</h3>
+              <p class="portfolio-summary">
+                Web-based STEM simulator allowing students to visualize wave mechanics, calculus tangents, and vector fields interactively.
+              </p>
+              <div class="portfolio-footer-action">
+                <button type="button" class="portfolio-link-btn view-project-btn">
+                  Explore Project
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Cybersecurity Projects -->
+          <article
+            class="portfolio-card reveal-zoom-in"
+            data-category="cybersecurity"
+            data-category-label="Cybersecurity Projects"
+            data-client="Fintech & SaaS Infrastructure"
+            data-tech="Python, Wireshark, Bash, OWASP ZAP, Metasploit"
+            data-long-desc="A full penetration testing and network perimeter audit uncovering critical misconfigurations, SQL injection vectors, and broken authentication pathways, concluding in zero-trust defense remediation."
+          >
+            <div class="portfolio-media-box">
+              <img
+                src="./assets/images/project_cyber_sec_1791143947884.jpg"
+                alt="SentinelShield Cyber Vulnerability Suite"
+                class="portfolio-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <div class="portfolio-overlay">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn">View Details</button>
+              </div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span>Cybersecurity</span>
+                <span aria-hidden="true">·</span>
+                <span>Pen-Testing Audit</span>
+                <span aria-hidden="true">·</span>
+                <span>2026</span>
+              </div>
+              <h3 class="portfolio-title">SentinelShield Vulnerability Audit</h3>
+              <p class="portfolio-summary">
+                Comprehensive security hardening, ethical vulnerability assessment, and threat vector mapping for financial web services.
+              </p>
+              <div class="portfolio-footer-action">
+                <button type="button" class="portfolio-link-btn view-project-btn">
+                  Explore Project
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Branding Projects -->
+          <article
+            class="portfolio-card reveal-zoom-in"
+            data-category="branding"
+            data-category-label="Branding Projects"
+            data-client="Vanguard Digital Agency"
+            data-tech="Adobe Illustrator, Figma, Brand Guidelines, Typography"
+            data-long-desc="Complete corporate rebranding incorporating brand strategy, customized typography pairings, dark-mode color palettes, and digital asset templates for international client pitches."
+          >
+            <div class="portfolio-media-box">
+              <img
+                src="./assets/images/project_branding_1791143958077.jpg"
+                alt="Vanguard Tech Brand System"
+                class="portfolio-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <div class="portfolio-overlay">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn">View Details</button>
+              </div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span>Branding Projects</span>
+                <span aria-hidden="true">·</span>
+                <span>Visual Identity</span>
+                <span aria-hidden="true">·</span>
+                <span>2026</span>
+              </div>
+              <h3 class="portfolio-title">Vanguard Tech Brand System</h3>
+              <p class="portfolio-summary">
+                Luxury tech brand identity with comprehensive typography rules, color tokens, and corporate stationery guidelines.
+              </p>
+              <div class="portfolio-footer-action">
+                <button type="button" class="portfolio-link-btn view-project-btn">
+                  Explore Project
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Logos -->
+          <article
+            class="portfolio-card reveal-zoom-in"
+            data-category="logos"
+            data-category-label="Logo Design"
+            data-client="Horizon Dynamics Africa"
+            data-tech="Vector Geometry, Golden Ratio, SVG, Monogram"
+            data-long-desc="Geometric vector monogram combining sharp angular precision with aerodynamic flow, designed for tech venture capital firm expanding across East Africa."
+          >
+            <div class="portfolio-media-box">
+              <img
+                src="./assets/images/project_branding_1791143958077.jpg"
+                alt="Horizon Dynamics Vector Logo"
+                class="portfolio-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <div class="portfolio-overlay">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn">View Details</button>
+              </div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span>Logos</span>
+                <span aria-hidden="true">·</span>
+                <span>Vector Identity</span>
+                <span aria-hidden="true">·</span>
+                <span>2026</span>
+              </div>
+              <h3 class="portfolio-title">Horizon Dynamics Vector Logo</h3>
+              <p class="portfolio-summary">
+                Minimalist geometric brandmark crafted using strict golden ratio arcs and modern high-contrast typography.
+              </p>
+              <div class="portfolio-footer-action">
+                <button type="button" class="portfolio-link-btn view-project-btn">
+                  Explore Project
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Flyers -->
+          <article
+            class="portfolio-card reveal-zoom-in"
+            data-category="flyers"
+            data-category-label="Flyer Design"
+            data-client="Nairobi Tech & Science Forum"
+            data-tech="Print Production, CMYK / RGB, Digital Graphics"
+            data-long-desc="High-energy digital promotional flyer series engineered for viral social engagement and high-resolution venue posters for an annual STEM developer convention in Nairobi."
+          >
+            <div class="portfolio-media-box">
+              <img
+                src="./assets/images/project_stem_edu_1791143937095.jpg"
+                alt="Global Tech & Science Summit Flyer"
+                class="portfolio-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <div class="portfolio-overlay">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn">View Details</button>
+              </div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span>Flyers</span>
+                <span aria-hidden="true">·</span>
+                <span>Promotional Asset</span>
+                <span aria-hidden="true">·</span>
+                <span>2026</span>
+              </div>
+              <h3 class="portfolio-title">Global Tech & Science Summit Flyer</h3>
+              <p class="portfolio-summary">
+                Futuristic editorial flyer set featuring bold typography, speaker callouts, and QR code instant registration flow.
+              </p>
+              <div class="portfolio-footer-action">
+                <button type="button" class="portfolio-link-btn view-project-btn">
+                  Explore Project
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <div class="lightbox-content-box">
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" type="button" aria-label="Close modal">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <img src="" alt="Project Preview" class="lightbox-hero-img" id="lightboxHeroImg" />
+        <div class="lightbox-body">
+          <div class="lightbox-meta" id="lightboxCategory">Web Development</div>
+          <h3 class="lightbox-title" id="lightboxTitle">Project Title</h3>
+          <p class="lightbox-desc" id="lightboxDesc">Full description goes here.</p>
+          <div class="lightbox-specs-grid">
+            <div class="spec-item">
+              <div class="spec-title">Client / Organization</div>
+              <div class="spec-val" id="lightboxClient">Private Client</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-title">Technologies Used</div>
+              <div class="spec-val" id="lightboxTech">HTML, CSS, JS, Python</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="#contact" class="btn btn-primary btn-sm" onclick="document.getElementById('lightboxCloseBtn').click();">Inquire About Similar Project</a>
+            <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">Discuss on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         7. Statistics Section (Animated Counters)
+         ==================================================================== -->
+    <section class="section stats-section" id="statistics">
+      <div class="container">
+        <div class="stats-grid reveal-stagger-group">
+          <!-- 50+ Projects Completed -->
+          <div class="stat-card reveal-zoom-in delay-100">
+            <div class="stat-number-wrapper tabular-nums">
+              <span class="stat-number" data-target="50">0</span><span>+</span>
+            </div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+
+          <!-- 100+ Students Taught -->
+          <div class="stat-card reveal-zoom-in delay-200">
+            <div class="stat-number-wrapper tabular-nums">
+              <span class="stat-number" data-target="100">0</span><span>+</span>
+            </div>
+            <div class="stat-label">Students Taught</div>
+          </div>
+
+          <!-- 20+ Happy Clients -->
+          <div class="stat-card reveal-zoom-in delay-300">
+            <div class="stat-number-wrapper tabular-nums">
+              <span class="stat-number" data-target="20">0</span><span>+</span>
+            </div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+
+          <!-- 5+ Years Experience -->
+          <div class="stat-card reveal-zoom-in delay-400">
+            <div class="stat-number-wrapper tabular-nums">
+              <span class="stat-number" data-target="5">0</span><span>+</span>
+            </div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. Location Section (Nairobi, Kenya & Embedded Map)
+         ==================================================================== -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-header reveal-slide-up">
+          <span class="section-kicker">Geographic Presence</span>
+          <h2 class="section-title">Based in Nairobi, Kenya</h2>
+          <p class="section-subtitle">
+            Operating from the Silicon Savannah of East Africa, partnering with clients and students locally and across the globe.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Location Info Card -->
+          <div class="location-info-card reveal-slide-left">
+            <div class="location-header-row">
+              <div class="location-pin-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="location-city">Nairobi, Kenya</h3>
+                <span class="location-region">East Africa · Tech Innovation Hub</span>
+              </div>
+            </div>
+
+            <ul class="location-details-list">
+              <li class="location-detail-item">
+                <span>📍</span>
+                <span><strong>Primary Address:</strong> Nairobi, Kenya</span>
+              </li>
+              <li class="location-detail-item">
+                <span>🌐</span>
+                <span><strong>Collaboration:</strong> Hybrid (In-person in Nairobi & Remote Worldwide)</span>
+              </li>
+              <li class="location-detail-item">
+                <span>⚡</span>
+                <span><strong>Response Window:</strong> Within 1–2 hours during business hours</span>
+              </li>
+            </ul>
+
+            <div class="nairobi-live-clock">
+              <span class="clock-label">Local Time in Nairobi:</span>
+              <span class="clock-time" id="nairobiClock">12:00:00 PM EAT</span>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="flex: 1;">
+                WhatsApp Victor
+              </a>
+              <a href="tel:+254769669814" class="btn btn-call btn-sm" style="flex: 1;">
+                Call Directly
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Google Map -->
+          <div class="map-wrapper reveal-slide-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.87974917637!2d36.7584223!3d-1.3032036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
+              title="Victor Kipkoech Location - Nairobi, Kenya"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. Contact Section (Direct Links & Functional Form)
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-slide-up">
+          <span class="section-kicker">Get In Touch</span>
+          <h2 class="section-title">Contact Victor Kipkoech</h2>
+          <p class="section-subtitle">
+            Have a project in mind, need cyber vulnerability audits, or seek dedicated Mathematics & Physics tutoring? Let's connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Panel -->
+          <div class="contact-info-panel reveal-slide-left">
+            <div class="contact-direct-cards reveal-stagger-group">
+              <!-- Location Card -->
+              <div class="contact-card-item reveal-slide-left">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Physical Base</div>
+                  <div class="contact-meta-value">📍 Nairobi, Kenya</div>
+                </div>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card-item reveal-slide-left delay-100">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Direct Phone Line</div>
+                  <div class="contact-meta-value">📞 0769669814</div>
+                </div>
+              </div>
+
+              <!-- WhatsApp Card -->
+              <div class="contact-card-item reveal-slide-left delay-200">
+                <div class="contact-icon-box" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.554 1.766.82 2.78.821 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.767-5.768-5.767zm9.969 5.768c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.241l-7.181 1.882 1.916-6.999c-.911-1.493-1.416-3.23-1.416-5.074 0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Instant Messaging</div>
+                  <div class="contact-meta-value">💬 WhatsApp Available</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Direct Action Buttons -->
+            <div class="contact-actions-row">
+              <a href="https://wa.me/254769669814" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.554 1.766.82 2.78.821 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.767-5.768-5.767zm9.969 5.768c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.241l-7.181 1.882 1.916-6.999c-.911-1.493-1.416-3.23-1.416-5.074 0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+                </svg>
+                WhatsApp Me
+              </a>
+              <a href="tel:+254769669814" class="btn btn-call btn-lg">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Call 0769669814
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Box -->
+          <div class="contact-form-box reveal-slide-right">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. John Doe"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  class="form-input"
+                  placeholder="e.g. john@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="serviceSelect" class="form-label">Service or Topic of Interest</label>
+                <select id="serviceSelect" name="service" class="form-select">
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Web Development">Web Development (Business, Portfolio, E-commerce)</option>
+                  <option value="Mathematics Tutoring">Mathematics Tutoring</option>
+                  <option value="Physics Tutoring">Physics Tutoring</option>
+                  <option value="Ethical Hacking">Ethical Hacking & Security Audit</option>
+                  <option value="Branding & Identity Design">Branding & Identity Design</option>
+                  <option value="Logo Design">Logo Design</option>
+                  <option value="Flyer Design">Flyer Design</option>
+                  <option value="Online Business Services">Online Business Consulting</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message *</label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="form-textarea"
+                  rows="4"
+                  placeholder="Briefly describe your project requirements, questions, or tutoring schedule preferences..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Send Message
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. Footer
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">Victor Kipkoech</div>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Victor Kipkoech &copy; 2026. All rights reserved.</p>
+          <div style="display: flex; gap: 1rem; align-items: center;">
+            <span>Nairobi, Kenya</span>
+            <span>·</span>
+            <a href="tel:+254769669814" style="color: var(--accent-cyan);">+254 769 669 814</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         11. Floating Widgets (WhatsApp Button & Back to Top)
+         ==================================================================== -->
+    <div class="floating-actions-container">
+      <!-- Back to Top Button -->
+      <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="Back to top">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+
+      <!-- Floating WhatsApp Button -->
+      <a
+        href="https://wa.me/254769669814"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="floating-whatsapp-btn"
+        aria-label="Chat directly with Victor Kipkoech on WhatsApp"
+        title="Chat on WhatsApp"
+      >
+        <span class="whatsapp-pulse-ring"></span>
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.679-.702c.971.554 1.766.82 2.78.821 3.183 0 5.769-2.586 5.769-5.766.001-3.182-2.585-5.767-5.768-5.767zm9.969 5.768c0 5.518-4.482 10-10 10-1.748 0-3.385-.45-4.819-1.241l-7.181 1.882 1.916-6.999c-.911-1.493-1.416-3.23-1.416-5.074 0-5.518 4.482-10 10-10s10 4.482 10 10z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Vanilla JavaScript Entry Point -->
+    <script src="./script.js"></script>
+  </body>
+</html>
